@@ -1,0 +1,11 @@
+<div>
+  <h1>Search result for {{view.keyword}} ...</h1>
+</div>
+<div id="result">
+  <div class="movie" ng-repeat="movie in view.search">
+    <img class="poster" src="{{movie.Poster}}" ng-hide="movie.Poster=='N/A'">
+    <h4>{{movie.Title}}</h4>
+    <p>{{movie.Year}}</p>
+    <a href="/show" ng-click="setMovieId(movie.imdbID)">read more</a>
+  </div>
+</div>

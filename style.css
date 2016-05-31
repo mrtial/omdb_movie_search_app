@@ -1,0 +1,131 @@
+html{
+  background-color: #F2F2F2;
+  font-family: 'Hind', sans-serif;
+  font-weight: 600;
+  display: inline-block;
+  overflow: scroll;
+}
+
+body{
+}
+
+nav{
+  width:20%;
+  height: 98%;
+  position: fixed;
+  background-color: white;
+  margin:0;
+}
+
+#logo{
+  width: 100%;
+  height: 150px;
+  background-color: #FFD801;
+  position: relative;
+  text-align: center;
+}
+
+#logo h1{
+  color:white;
+  font-size: 80px;
+  margin:0;
+  position: absolute;
+  margin-left: 10%;
+}
+
+#logo p{
+  position: absolute;
+  bottom: 0px;
+  font-size: 25px;
+  margin-left: 10%;
+}
+
+#searchBar{
+  margin-left: 10%;
+  margin-top: 10%;
+  display: flex;
+  align-items:center;
+}
+
+#searchBar input{
+  height: 30px;
+  margin-right: 15px;
+  width: 70%;
+  font-size: 18px;
+}
+
+#searchBar button{
+  border: none;
+  background: none;
+}
+
+#searchBar i{
+  cursor: pointer;
+}
+
+#searchBar i:hover{
+  color:#FFD801;
+}
+
+
+#searchBy{
+  margin-top: 10px;
+  margin-left: 10%;
+}
+
+
+#advanced{
+  margin-top: 40px;
+  margin-left: 10%;
+}
+
+/*  container */
+#container{
+  margin-left: 22%;
+  width: 75%;
+  height: 150px;
+  /*border: 1px solid red;*/
+}
+
+#container h1{
+  font-size: 40px;
+  position: absolute;
+  top:7%;
+  /*font-weight: 400;*/
+  color:gray;
+}
+
+#result{
+  margin-top: 12%;
+  width: 100%;
+  /*height: 500px;*/
+  /*border: 1px solid red;*/
+  display: inline-flex;
+  flex-wrap: wrap;
+  /*justify-content: space-around;*/
+}
+
+.movie{
+  width: 220px;
+  align-items: flex-start;
+  margin:10px;
+  box-sizing: content-box;
+  text-align: center;
+  background-color: white;
+  cursor: pointer;
+}
+
+.poster{
+  width: 220px;
+}
+
+
+
+
+
+
+
+
+
+
+

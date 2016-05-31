@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="omdbApp">
+<head>
+  <meta charset="UTF-8">
+  <title>OMDB Movie Search</title>
+  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-route.js"></script>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link href='https://fonts.googleapis.com/css?family=Hind:300,400,600' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+  <script src="https://use.fontawesome.com/b4561866ad.js"></script>
+  <script type="text/javascript" src="app.js"></script>
+  <base href="/">
+</head>
+<body ng-controller="searchController">
+  <nav>
+    <div id="logo">
+      <h1>OMDb</h1>
+      <p>Movie Search App</p>
+    </div>
+    <div id="searchBar">
+      <form ng-submit="getMovie(view.keyword)">
+        <input type="text" placeholder=" Search for..." ng-model="view.keyword">
+        <button type="submit" alt="Submit Form"><i class="fa fa-2x fa-search" aria-hidden="true"></i></button>
+      </form>
+    </div>
+
+    <form id="searchBy">
+      <label>Search By : </label>
+      <input type="radio" name="searchBy" checked="true" ng-click="searchBy('s')"> keyword
+      <input type="radio" name="searchBy" ng-click="searchBy('t')"> title
+    </form>
+
+
+    <div id="advanced">
+      <p>Advanced Search</p>
+      <ul>
+        <li>Data Type
+          <ul>
+            <li>movie</li>
+            <li>series</li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <div ng-view id="container">
+    
+  </div>
+  
+
+</body>
+</html>
+
